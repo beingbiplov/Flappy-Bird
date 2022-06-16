@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: 3% 0;
+    /* position: relative; */
+}
+.game_section {
+    width: 50%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    background-image: url('../images/background-day.png');
+    /* background-size: contain; */
+    position: relative;
+}
+
+.game {
+    display: none;
+}
+.startscreen {
+    width: 80%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: aquamarine;
+    background-image: url('../images/background-day.png');
+    border-radius: 15px;
+    position: relative;
+    /* display: none; */
+}
+
+.startscreen img {
+    width: 40%;
+    height: 50%;
+    display: block;
+    margin: 10% auto;
+    cursor: pointer;
+}
+
+#score_screen{
+    position: absolute;
+    bottom: 0;
+}
+
+.base{
+    position: absolute;
+    background-image: url('../images/base.png');
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    bottom: 0;
+    animation: move 2s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.final_score{
+    position: absolute;
+    top: 27%;
+    left: 37%;
+    z-index: -1;
+    display: none;
+}
+
+.board {
+    position: relative;
+}
+
+#restart{
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+    display: none;
+}
+
+#restart h3{
+    color: #fca146;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
